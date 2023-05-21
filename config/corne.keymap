@@ -30,26 +30,47 @@
         combos {
                 compatible = "zmk,combos";
                 // Toggles the different layers using combos
-                combo_num{
+                // Added combos for each side to get to all layers
+                combo_numR{
                         timeout-ms = <50>;
-                        key-positions = <30 31>;
+                        key-positions = <1 13>;
                         bindings = <&tog 1>;
                 };
-                combo_sym {
+                combo_symR {
                         timeout-ms = <50>;
-                        key-positions = <14 29>;
+                        key-positions = <2 14>;
                         bindings = <&tog 2>;
                 };        
-                combo_func{
+                combo_funcR{
                         timeout-ms = <50>;
-                        key-positions = <16 30>;
+                        key-positions = <3 15>;
                         bindings = <&tog 3>;
                 };     
-                combo_navi{
+                combo_naviR{
                         timeout-ms = <50>;
-                        key-positions = <13 14>;
+                        key-positions = <4 16>;
                         bindings = <&tog 4>;
-                };                     
+                };      
+                combo_numL{
+                        timeout-ms = <50>;
+                        key-positions = <6 18>;
+                        bindings = <&tog 1>;
+                };
+                combo_symL{
+                        timeout-ms = <50>;
+                        key-positions = <7 19>;
+                        bindings = <&tog 2>;
+                };        
+                combo_funcL{
+                        timeout-ms = <50>;
+                        key-positions = <8 20>;
+                        bindings = <&tog 3>;
+                };     
+                combo_naviL{
+                        timeout-ms = <50>;
+                        key-positions = <9 21>;
+                        bindings = <&tog 4>;
+                };                  
         };
 
         keymap {
@@ -67,8 +88,8 @@
         &kp TAB         &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L           &kp SEMI      &kp SQT
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|  Left Shift  |       Z       |       X       |       C       |        V      |        B      |        N      |        M      |        ,      |       .       |       /       |  Navi Layer  |            
-      &kp LSHFT        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M          &kp COMMA       &kp DOT         &kp FSLH        &mo 4
+//|  Left Shift  |       Z       |       X       |       C       |        V      |        B      |        N      |        M      |        ,      |       .       |       /       |    OS Key    |            
+      &kp LSHFT        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M          &kp COMMA       &kp DOT         &kp FSLH     &kp LEFT_GUI
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |    Left CTRL  |    Backspace  |    Left ALT   |               |               |    Spacebar   |  Funct Layer  |
@@ -84,16 +105,16 @@
         &trans        &kp N1           &kp N2         &kp N3           &kp N4          &kp N5          &kp N6          &kp N7          &kp N8         &kp N9          &kp N0         &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |       _       |       _       |        _      |        _      |        *      |        4      |        5      |       6       |       +       |      _       |        
-        &trans          &trans           &trans        &trans           &trans          &trans    &kp KP_MULTIPLY      &kp N4          &kp N5         &kp N6        &kp KP_PLUS     &trans
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        *      |        4      |        5      |       6       |       +       |      _       |        
+        &trans          &trans        &kp LEFT       &kp DOWN         &kp RIGHT      &trans       &kp KP_MULTIPLY      &kp N4          &kp N5         &kp N6        &kp KP_PLUS     &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //|       _      |       _       |       _       |       _       |        _      |        _      |        /      |        1      |        2      |       3       |       -       |      _       |            
         &trans        &trans           &trans          &trans           &trans         &trans      &kp KP_DIVIDE       &kp N1          &kp N2         &kp N3        &kp KP_MINUS     &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-//                                         |       _       |       _       |       _       |               |       .       |       0       |       =       | 
-                                                &trans          &trans          &trans                          &kp DOT         &kp N0        &kp EQUAL
+//                                         |       _       |    Spacebar   |       UP       |               |       .       |       0       |       =       | 
+                                                &trans          &kp SPACE        &kp UP                          &kp DOT         &kp N0        &kp EQUAL
 //                                         |               |               |               |               |               |               |               |
 //                                         -----------------------------------------------------------------------------------------------------------------                        
 
@@ -107,16 +128,16 @@
        &kp TILDE      &kp EXCL         &kp AT         &kp HASH       &kp DOLLAR     &kp PERCENT      &kp CARET     &kp AMPERSAND   &kp ASTERISK      &kp LPAR        &kp RPAR        &kp MINUS
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |       _       |       _       |        _      |        _      |        _      |     LBracket  |     RBracket  |      Pipe     |       _       |      +       |                
-        &trans          &trans           &trans        &trans           &trans          &trans          &trans        &kp LBKT        &kp RBKT        &kp PIPE          &trans        &kp PLUS
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        _      |     LBracket  |     RBracket  |      Pipe     |       _       |      +       |                
+        &trans          &trans         &kp LEFT       &kp DOWN         &kp RIGHT        &trans          &trans        &kp LBKT        &kp RBKT        &kp PIPE          &trans        &kp PLUS
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //|       _      |       _       |       _       |       _       |        _      |        _      |        _      |     LBrace    |      RBrace   |       _       |       _       |      =       |            
         &trans        &trans           &trans          &trans           &trans         &trans           &trans        &kp LBRC         &kp RBRC         &trans           &trans        &kp EQUAL
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-//                                         |       _       |       _       |       _       |               |    Less Then  |  Greater Then |       _       | 
-                                                &trans          &trans          &trans                           &kp LT         &kp GT         &trans
+//                                         |       _       |    Spacebar   |       UP       |               |    Less Then  |  Greater Then |       _       | 
+                                                &trans          &kp SPACE       &kp UP                           &kp LT         &kp GT         &trans
 //                                         |               |               |               |               |               |               |               |
 //                                         -----------------------------------------------------------------------------------------------------------------
                         >;
@@ -124,20 +145,20 @@
                 function_layer {
                         bindings = < 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------               
-//|       _      |       F1      |       F2      |      F3       |       F4      |       F5      |       F6      |       F7      |       F8      |      F9       |      F10       |     _     |              
-        &trans         &kp F1          &kp F2         &kp F3          &kp F4          &kp F5          &kp F6          &kp F7           &kp F8         &kp F9          &kp F10         &trans
-//|              |               |               |               |               |               |               |               |               |               |               |              |        
+//|       _      |       F1      |       F2      |      F3       |       F4      |       F5      |       F6      |       F7      |       F8      |      F9       |      F10       |      F11    |            
+        &trans         &kp F1          &kp F2         &kp F3          &kp F4          &kp F5          &kp F6          &kp F7           &kp F8         &kp F9          &kp F10         &kp F11
+//|              |               |               |               |               |               |               |               |               |               |                |             |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |      F11       |      F12     |       _       |        _      |        _      |        _      |        _      |        _      |       _       |       _       |      _       |        
-        &trans        &kp F11          &kp F12        &trans           &trans          &trans          &trans          &trans          &trans         &trans          &trans         &trans
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |       _      |        _      |        _      |        _      |       _       |       _        |      F12     |        
+        &trans        &trans          &kp LEFT       &kp DOWN         &kp RIGHT       &trans          &trans          &trans          &trans         &trans          &trans          &kp F12
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //|       _      |       _       |       _       |       _       |        _      |        _      |        _      |        _      |        _      |       _       |       _       |      _       |            
         &trans        &trans           &trans          &trans           &trans         &trans           &trans          &trans         &trans         &trans           &trans         &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-//                                         |       _       |    DELETE     |       _       |               |       _       |       _       |       _       | 
-                                                &trans          &trans          &trans                        &trans            &trans          &trans
+//                                         |       _       |    DELETE     |      UP       |               |       _       |       _       |       _       | 
+                                                &trans          &trans          &kp UP                        &trans            &trans          &trans
 //                                         |               |               |               |               |               |               |               |
 //                                         -----------------------------------------------------------------------------------------------------------------
                         >;
