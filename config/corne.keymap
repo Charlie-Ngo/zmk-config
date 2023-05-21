@@ -25,7 +25,7 @@
                 };
                 // Keys SB for symbol layer
                 combo_sym{
-                        timeout-ms = <50>;S
+                        timeout-ms = <50>;
                         key-positions = <15 30>; 
                         bindings = <&to 2>;
                 };    
