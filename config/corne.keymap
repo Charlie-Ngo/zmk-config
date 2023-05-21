@@ -13,7 +13,7 @@
 #define SYM     2
 #define FUNC    3
 #define NAVI    4
-asasf/
+
 /{
         combos {
                 compatible = "zmk,combos";
@@ -63,7 +63,7 @@ asasf/
       &kp LSHFT        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M          &kp COMMA       &kp DOT         &kp FSLH        &kp RET
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-//                                         |    Left CTRL  |    Backspace  |    Left ALT   |               |               |    Spacebar   |  Lower Layer  |
+//                                         |    Left CTRL  |    Backspace  |    Left ALT   |               |               |    Spacebar   |  Funct Layer  |
                                                 &kp LCTRL       &kp BSPC        &kp LALT                        &kp RET         &kp SPACE       &mo 3
 //                                         |               |               |               |               |               |               |               |
 //                                         -----------------------------------------------------------------------------------------------------------------
