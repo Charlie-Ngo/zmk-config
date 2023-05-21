@@ -19,14 +19,24 @@
                 compatible = "zmk,combos";
                 combo_num{
                         timeout-ms = <50>;
-                        key-positions = <31 32>;
+                        key-positions = <30 31>;
                         bindings = <&tog 1>;
                 };
                 combo_sym {
                         timeout-ms = <50>;
-                        key-positions = <15 30>;
+                        key-positions = <14 29>;
                         bindings = <&tog 2>;
-                };                
+                };        
+                combo_func{
+                        timeout-ms = <50>;
+                        key-positions = <16 30>;
+                        bindings = <&tog 3>;
+                };     
+                combo_navi{
+                        timeout-ms = <50>;
+                        key-positions = <13 14>;
+                        bindings = <&tog 4>;
+                };                     
         };
 
         keymap {
@@ -44,8 +54,8 @@
         &kp TAB         &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L           &kp SEMI      &kp SQT
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|  Left Shift  |       Z       |       X       |       C       |        V      |        B      |        N      |        M      |        ,      |       .       |       /       |    Enter     |            
-      &kp LSHFT        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M          &kp COMMA       &kp DOT         &kp FSLH        &kp RET
+//|  Left Shift  |       Z       |       X       |       C       |        V      |        B      |        N      |        M      |        ,      |       .       |       /       |  Navi Layer  |            
+      &kp LSHFT        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M          &kp COMMA       &kp DOT         &kp FSLH        &mo 4
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |    Left CTRL  |    Backspace  |    Left ALT   |               |               |    Spacebar   |  Funct Layer  |
@@ -70,7 +80,7 @@
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |       _       |       _       |               |       .       |       0       |       =       | 
-                                                &trans          &trans          &trans                          &kp DOT         &kp N0        &kp KP_EQUAL
+                                                &trans          &trans          &trans                          &kp DOT         &kp N0        &kp EQUAL
 //                                         |               |               |               |               |               |               |               |
 //                                         -----------------------------------------------------------------------------------------------------------------                        
 
