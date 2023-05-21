@@ -14,33 +14,34 @@
 #define FUNC    3
 #define NAVI    4
 
-combos {
-        compatible = "zmk,combos";
-        // Keys NM for number layer
-        combo_num{
-                timeout-ms = <50>;
-                key-positions = <30 31>; 
-                bindings = <&to 1>;
+/{
+        combos {
+                compatible = "zmk,combos";
+                // Keys NM for number layer
+                combo_num{
+                        timeout-ms = <50>;
+                        key-positions = <30 31>; 
+                        bindings = <&to 1>;
+                };
+                // Keys SB for symbol layer
+                combo_sym{
+                        timeout-ms = <50>;S
+                        key-positions = <15 30>; 
+                        bindings = <&to 2>;
+                };    
+                //Keys FN or function layer    
+                combo_func{
+                        timeout-ms = <50>;
+                        key-positions = <17 31>; 
+                        bindings = <&to 3>;
+                };  
+                // Keys AS or navigation (arrows) layer
+                combo_navi{
+                        timeout-ms = <50>;
+                        key-positions = <14 31>; 
+                        bindings = <&to 4>;
+                };               
         };
-        // Keys SB for symbol layer
-        combo_sym{
-                timeout-ms = <50>;S
-                key-positions = <15 30>; 
-                bindings = <&to 2>;
-        };    
-        //Keys FN or function layer
-        
-        combo_func{
-                timeout-ms = <50>;
-                key-positions = <17 31>; 
-                bindings = <&to 3>;
-        };  
-        // Keys AS or navigation (arrows) layer
-        combo_navi{
-                timeout-ms = <50>;
-                key-positions = <14 31>; 
-                bindings = <&to 4>;
-        };               
 };
 / {
         keymap {
