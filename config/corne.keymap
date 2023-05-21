@@ -13,6 +13,7 @@
 #define SYM     2
 #define FUNC    3
 #define NAVI    4
+
 #define COMBO(NAME, BINDINGS, KEYPOS, MS) \
         combo_##NAME { \
                 bindings = <BINDINGSS>; \
@@ -27,6 +28,11 @@
                         key-positions = <31 32>;
                         bindings = <&tog 1>;
                 };
+                combo_sym {
+                        timeout-ms = <50>;
+                        key-positions = <15 30>;
+                        bindings = <&tog 2;
+                };                
         };
 
         keymap {
