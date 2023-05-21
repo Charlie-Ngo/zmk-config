@@ -13,15 +13,17 @@
 #define SYM     2
 #define FUNC    3
 #define NAVI    4
-
+#define COMBO(NAME, BINDINGS, KEYPOS, MS) \
+        combo_##NAME {
+                bindings = <BINDINGSS>; \
+                key-positions = <KEYPOS>; \
+                timeout-ms = <MS>; \
+        };
 /{
         combos {
                 compatible = "zmk,combos";
-                
-                COMBO(num_layer,&tog 1, 31 32)
-                COMBO(sym_layer,&tog 2, 15 30)
-                COMBO(func_layer,&tog 3, 17 31)
-                COMBO(navi_layer,&tog 4, 14 15)           
+                COMBO(num_layer, &tog 1, 31 32, 50)
+                COMBO(sym_layer, &tog 2, 15 29, 50)    
         };
 
         keymap {
