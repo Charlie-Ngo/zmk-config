@@ -14,7 +14,7 @@
 #define FUNC    3
 #define NAVI    4
 #define COMBO(NAME, BINDINGS, KEYPOS, MS) \
-        combo_##NAME {
+        combo_##NAME { \
                 bindings = <BINDINGSS>; \
                 key-positions = <KEYPOS>; \
                 timeout-ms = <MS>; \
