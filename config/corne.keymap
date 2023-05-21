@@ -22,8 +22,11 @@
 /{
         combos {
                 compatible = "zmk,combos";
-                COMBO(num_layer, &tog 1, 31 32, 50)
-                COMBO(sym_layer, &tog 2, 15 29, 50)    
+                combo_num{
+                        timeout-ms = <50>;
+                        key-positions = <31 32>;
+                        bindings = <&tog 1>;
+                };
         };
 
         keymap {
