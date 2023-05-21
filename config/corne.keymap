@@ -17,30 +17,11 @@
 /{
         combos {
                 compatible = "zmk,combos";
-                // Keys NM for number layer
-                combo_num{
-                        timeout-ms = <50>;
-                        key-positions = <30 31>; 
-                        bindings = <&tog 1>;
-                };
-                // Keys SB for symbol layer
-                combo_sym{
-                        timeout-ms = <50>;
-                        key-positions = <15 30>; 
-                        bindings = <&tog 2>;
-                };    
-                //Keys FN or function layer    
-                combo_func{
-                        timeout-ms = <50>;
-                        key-positions = <17 31>; 
-                        bindings = <&tog 3>;
-                };  
-                // Keys AS or navigation (arrows) layer
-                combo_navi{
-                        timeout-ms = <50>;
-                        key-positions = <14 31>; 
-                        bindings = <&tog 4>;
-                };               
+                
+                COMBO(num_layer,&tog 1, 31 32)
+                COMBO(sym_layer,&tog 2, 15 30)
+                COMBO(func_layer,&tog 3, 17 31)
+                COMBO(navi_layer,&tog 4, 14 15)           
         };
 
         keymap {
