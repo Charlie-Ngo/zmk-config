@@ -116,12 +116,12 @@
         &trans        &kp N1           &kp N2         &kp N3           &kp N4          &kp N5          &kp N6          &kp N7          &kp N8         &kp N9          &kp N0         &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        *      |        4      |        5      |       6       |       +       |      _       |        
-        &trans          &trans        &kp LEFT       &kp DOWN         &kp RIGHT      &trans       &kp KP_MULTIPLY      &kp N4          &kp N5         &kp N6        &kp KP_PLUS     &trans
+//|       _      |       _       |       _       |       _       |        _      |        _      |        *      |        4      |        5      |       6       |       +       |      _       |        
+        &trans          &trans         &trans          &trans           &trans       &trans       &kp KP_MULTIPLY      &kp N4          &kp N5         &kp N6        &kp KP_PLUS     &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |       _       |       _       |        _      |        _      |        /      |        1      |        2      |       3       |       -       |      _       |            
-        &trans        &trans           &trans          &trans           &trans         &trans      &kp KP_DIVIDE       &kp N1          &kp N2         &kp N3        &kp KP_MINUS     &trans
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        /      |        1      |        2      |       3       |       -       |      _       |            
+        &trans        &trans           &kp LEFT       &kp DOWN         &kp RIGHT       &trans      &kp KP_DIVIDE       &kp N1          &kp N2         &kp N3        &kp KP_MINUS     &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |       _       |       UP       |               |       .       |       0       |       =       | 
@@ -139,12 +139,12 @@
        &kp TILDE      &kp EXCL         &kp AT         &kp HASH       &kp DOLLAR     &kp PERCENT      &kp CARET     &kp AMPERSAND   &kp ASTERISK      &kp LPAR        &kp RPAR        &kp MINUS
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        _      |     LBracket  |     RBracket  |      Pipe     |       _       |      +       |                
-        &trans          &trans         &kp LEFT       &kp DOWN         &kp RIGHT        &trans          &trans        &kp LBKT        &kp RBKT        &kp PIPE          &trans        &kp PLUS
+//|       _      |       _       |       _       |       _       |        _      |        _      |        _      |     LBracket  |     RBracket  |      Pipe     |       _       |      +       |                
+        &trans          &trans         &trans          &trans           &trans          &trans          &trans        &kp LBKT        &kp RBKT        &kp PIPE          &trans        &kp PLUS
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |       _       |       _       |        _      |        _      |        _      |     LBrace    |      RBrace   |       _       |       _       |      =       |            
-        &trans        &trans           &trans          &trans           &trans         &trans           &trans        &kp LBRC         &kp RBRC         &trans           &trans      &kp EQUAL
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        _      |     LBrace    |      RBrace   |       _       |       _       |      =       |            
+        &trans        &trans           &kp LEFT       &kp DOWN         &kp RIGHT       &trans           &trans        &kp LBRC         &kp RBRC         &trans           &trans      &kp EQUAL
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |        _      |       UP       |               |    Less Then  |  Greater Then |       _       | 
@@ -160,12 +160,12 @@
         &trans         &kp F1          &kp F2         &kp F3          &kp F4          &kp F5          &kp F6          &kp F7           &kp F8         &kp F9          &kp F10         &kp F11
 //|              |               |               |               |               |               |               |               |               |               |                |             |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |       _      |        _      |        _      |        _      |       _       |       _        |      F12     |        
-        &trans        &trans          &kp LEFT       &kp DOWN         &kp RIGHT       &trans          &trans          &trans          &trans         &trans          &trans          &kp F12
+//|       _      |       _       |       _       |       _       |        _      |       _      |        _      |        _      |        _      |       _       |       _        |      F12     |        
+        &trans        &trans           &trans          &trans          &trans        &trans          &trans          &trans          &trans         &trans          &trans          &kp F12
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |       _       |       _       |        _      |        _      |        _      |        _      |        _      |       _       |       _       |      _       |            
-        &trans        &trans           &trans          &trans           &trans         &trans           &trans          &trans         &trans         &trans           &trans         &trans
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        _      |        _      |        _      |       _       |       _       |      _       |            
+        &trans        &trans           &kp LEFT       &kp DOWN         &kp RIGHT       &trans           &trans          &trans         &trans         &trans           &trans         &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |    DELETE     |      UP       |               |       _       |       _       |       _       | 
@@ -178,16 +178,16 @@
                 navi_layer {    
                         bindings = < 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------               
-//|       _      |      HOME     |        _      |       _       |        _      |      PGUP     |        -      |        -      |        _      |       -       |       _       |      _       |              
-        &trans        &kp HOME           &trans          &trans        &trans        &kp PG_UP        &trans          &trans           &trans         &trans          &trans         &trans
+//|       _      |      _        |        _      |      HOME     |      PGUP     |        -      |        -      |        -      |        _      |       -       |       _       |      _       |              
+        &trans         &trans            &trans       &kp HOME       &kp PG_UP         &trans         &trans          &trans           &trans         &trans          &trans         &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |      END      |      LEFT     |      DOWN     |      RIGHT    |     PGDOWN    |        _      |        _      |        _      |       _       |       _       |      _       |        
-        &trans        &kp END          &kp LEFT       &kp DOWN         &kp RIGHT      &kp PG_DN        &trans          &trans          &trans         &trans          &trans         &trans
+//|       _      |      _        |       _       |      END      |     PGDOWN    |        -      |        _      |        _      |        _      |       _       |       _       |      _       |        
+        &trans         &trans          &trans         &kp END        &kp PG_DN         &trans         &trans          &trans          &trans         &trans          &trans         &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |       _       |       _       |        _      |        _      |        _      |        _      |        _      |       _       |       _       |      _       |            
-        &trans        &trans           &trans          &trans           &trans         &trans           &trans          &trans         &trans         &trans           &trans         &trans
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |       _      |        _      |        _      |        _      |       _       |       _       |      _       |            
+        &trans        &trans           &kp LEFT       &kp DOWN         &kp RIGHT       &trans           &trans          &trans         &trans         &trans           &trans         &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |       _       |       UP       |               |       _       |       _       |       _       | 
