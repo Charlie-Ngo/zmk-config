@@ -31,46 +31,57 @@
                 compatible = "zmk,combos";
                 // Toggles the different layers using combos
                 // Added combos for each side to get to all layers
-                combo_numR{
-                        timeout-ms = <50>;
-                        key-positions = <0 1>;
-                        bindings = <&tog 1>;
-                };
-                combo_symR {
-                        timeout-ms = <50>;
-                        key-positions = <0 2>;
-                        bindings = <&tog 2>;
-                };        
-                combo_funcR{
-                        timeout-ms = <50>;
-                        key-positions = <0 3>;
-                        bindings = <&tog 3>;
-                };     
-                combo_naviR{
-                        timeout-ms = <50>;
-                        key-positions = <0 4>;
-                        bindings = <&tog 4>;
-                };      
                 combo_numL{
                         timeout-ms = <50>;
-                        key-positions = <11 6>;
+                        key-positions = <0 2>;
                         bindings = <&tog 1>;
                 };
-                combo_symL{
+                combo_symL {
                         timeout-ms = <50>;
-                        key-positions = <11 7>;
+                        key-positions = <0 3>;
                         bindings = <&tog 2>;
                 };        
                 combo_funcL{
                         timeout-ms = <50>;
-                        key-positions = <11 8>;
+                        key-positions = <0 4>;
                         bindings = <&tog 3>;
                 };     
                 combo_naviL{
                         timeout-ms = <50>;
+                        key-positions = <0 5>;
+                        bindings = <&tog 4>;
+                };  
+                combo_multiL{
+                        timeout-ms = <50>;
+                        key-positions = <28 29 38>;
+                        bindings = <&tog 5>;
+                };                    
+                combo_numR{
+                        timeout-ms = <50>;
+                        key-positions = <11 6>;
+                        bindings = <&tog 1>;
+                };
+                combo_symR{
+                        timeout-ms = <50>;
+                        key-positions = <11 7>;
+                        bindings = <&tog 2>;
+                };   
+
+                combo_funcR{
+                        timeout-ms = <50>;
+                        key-positions = <11 8>;
+                        bindings = <&tog 3>;
+                };     
+                combo_naviR{
+                        timeout-ms = <50>;
                         key-positions = <11 9>;
                         bindings = <&tog 4>;
-                };                                     
+                };    
+                combo_multiR{
+                        timeout-ms = <50>;
+                        key-positions = <30 31 39>;
+                        bindings = <&tog 5>;
+                };                                 
         };
 
         keymap {
@@ -192,16 +203,16 @@
      &kp TILDE        &kp F1          &kp F2         &kp F3          &kp F4          &kp F5          &kp F6          &kp F7           &kp F8         &kp F9          &kp F10         &kp F11
 //|              |               |               |               |               |               |               |               |               |               |                |             |        
  //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------               
-//|       _      |       1       |        2      |       3       |        4      |        5      |        6      |        7      |        8      |       9       |       0       |      =       |              
-        &trans        &kp N1           &kp N2         &kp N3           &kp N4          &kp N5          &kp N6          &kp N7          &kp N8         &kp N9          &kp N0         &kp EQUAL
+//|    DELETE    |       1       |        2      |       3       |        4      |        5      |        6      |        7      |        8      |       9       |       0       |      =       |              
+     &kp DELETE        &kp N1           &kp N2         &kp N3           &kp N4          &kp N5          &kp N6          &kp N7          &kp N8         &kp N9          &kp N0         &kp EQUAL
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |     LBracket  |     RBracket  |      Pipe     |     LBrace    |      RBrace   |      _       |            
         &trans        &trans          &kp LEFT       &kp DOWN         &kp RIGHT        &trans         &kp LBKT        &kp RBKT        &kp PIPE        &kp LBRC         &kp RBRC        &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-//                                         |       _       |    DELETE     |       UP       |               |       _       |       _       |       _       | 
-                                                &trans         &kp DELETE        &kp UP                          &trans            &trans          &trans
+//                                         |       _       |       _       |       UP       |               |       _       |       _       |       _       | 
+                                                &trans          &trans           &kp UP                          &trans            &trans          &trans
 //                                         |               |               |                |               |               |               |               |
 //                                          -----------------------------------------------------------------------------------------------------------------
                         >;
