@@ -139,12 +139,12 @@
        &kp TILDE      &kp EXCL         &kp AT         &kp HASH       &kp DOLLAR     &kp PERCENT      &kp CARET     &kp AMPERSAND   &kp ASTERISK      &kp LPAR        &kp RPAR        &kp MINUS
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |       _       |       _       |        _      |        _      |        _      |     LBracket  |     RBracket  |      Pipe     |       _       |      +       |                
-        &trans          &trans         &trans          &trans           &trans          &trans          &trans        &kp LBKT        &kp RBKT        &kp PIPE          &trans        &kp PLUS
+//|       _      |       _       |       _       |       _       |        _      |        _      |        _      |     LBracket  |     RBracket  |      Pipe     |       _       |      =       |               
+        &trans          &trans         &trans          &trans           &trans          &trans          &trans        &kp LBKT        &kp RBKT        &kp PIPE          &trans       &kp EQUAL
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        _      |     LBrace    |      RBrace   |       _       |       _       |      =       |            
-        &trans        &trans           &kp LEFT       &kp DOWN         &kp RIGHT       &trans           &trans        &kp LBRC         &kp RBRC         &trans           &trans      &kp EQUAL
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        _      |     LBrace    |      RBrace   |       _       |       _       |      +       |            
+        &trans        &trans           &kp LEFT       &kp DOWN         &kp RIGHT       &trans           &trans        &kp LBRC         &kp RBRC         &trans           &trans      &kp PLUS
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |        _      |       UP       |               |    Less Then  |  Greater Then |       _       | 
@@ -199,17 +199,17 @@
                 multi_layer {    
                         bindings = < 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------               
-//|       ~      |       F1      |       F2      |      F3       |       F4      |       F5      |       F6      |       F7      |       F8      |      F9       |      F10       |      F11    |            
-     &kp TILDE        &kp F1          &kp F2         &kp F3          &kp F4          &kp F5          &kp F6          &kp F7           &kp F8         &kp F9          &kp F10         &kp F11
-//|              |               |               |               |               |               |               |               |               |               |                |             |        
+//|       ~      |       1       |        2      |       3       |        4      |        5      |        6      |        7      |        8      |       9       |       0       |       -       |            
+     &kp TILDE         &kp N1           &kp N2         &kp N3           &kp N4          &kp N5          &kp N6          &kp N7          &kp N8         &kp N9          &kp N0        &kp MINUS
+//|              |               |               |               |               |               |               |               |               |               |               |               |        
  //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------               
-//|    DELETE    |       1       |        2      |       3       |        4      |        5      |        6      |        7      |        8      |       9       |       0       |      =       |              
-     &kp DELETE        &kp N1           &kp N2         &kp N3           &kp N4          &kp N5          &kp N6          &kp N7          &kp N8         &kp N9          &kp N0         &kp EQUAL
+//|    DELETE    |       !       |        @      |       #       |        $      |        %      |        ^      |        &      |        *      |  LParentheses | RParentheses  |      =       |              
+     &kp DELETE        &kp EXCL         &kp AT         &kp HASH       &kp DOLLAR     &kp PERCENT      &kp CARET     &kp AMPERSAND   &kp ASTERISK      &kp LPAR        &kp RPAR      &kp EQUAL
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |     LBracket  |     RBracket  |      Pipe     |     LBrace    |      RBrace   |      _       |            
-        &trans        &trans          &kp LEFT       &kp DOWN         &kp RIGHT        &trans         &kp LBKT        &kp RBKT        &kp PIPE        &kp LBRC         &kp RBRC        &trans
-//|              |               |               |               |               |               |               |               |               |               |               |              |        
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        _      |     LBracket  |     RBracket  |     LBrace    |      RBrace   |      Pipe     |            
+        &trans        &trans          &kp LEFT       &kp DOWN         &kp RIGHT        &trans           &trans         &kp LBKT        &kp RBKT        &kp LBRC         &kp RBRC       &kp PIPE    
+//|              |               |               |               |               |               |               |               |               |               |               |               |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |       _       |       UP       |               |       _       |       _       |       _       | 
                                                 &trans          &trans           &kp UP                          &trans            &trans          &trans
