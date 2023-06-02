@@ -95,13 +95,11 @@
                 };                                 
         };
         macros{
-                macro_CTRL_HOME: macro_CTRL_HOME{
-                        compatible = "zmk,behavior-macro";
-                        label = "macro_CTRL_HOME";
-                        wait-ms = <30>; 
+                ZMK_MACRO(macro_CTRL_HOME,
+                        wait-ms = <30>;
                         tap-ms = <40>;
-                        bindings = <&kp LCTRL &kp LSHFT &kp End>;
-                };
+                        bindings = <&kp LSHFT &kp LCTRL &kp END>;
+                )
         };
 
         keymap {
