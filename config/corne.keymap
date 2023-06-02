@@ -118,12 +118,24 @@
                 ZMK_MACRO(macro_CTRL_HOME,
                         wait-ms = <30>;
                         tap-ms = <40>;
-                        bindings = <&kp LSHFT &kp LCTRL &kp HOME>;
+                        bindings 
+                                = <&macro_press         &kp LSHFT>
+                                , <&macro_press         &kp LCTRL>
+                                , <&macro_tap           &kp HOME>
+                                , <&macro_release       &kp LCTRL>
+                                , <&macro_release       &kp LSHFT>
+                        ;
                 )
                 ZMK_MACRO(macro_CTRL_END,
                         wait-ms = <30>;
                         tap-ms = <40>;
-                        bindings = <&kp LSHFT &kp LCTRL &kp END>;
+                        bindings 
+                                = <&macro_press         &kp LSHFT>
+                                , <&macro_press         &kp LCTRL>
+                                , <&macro_tap           &kp END>
+                                , <&macro_release       &kp LCTRL>
+                                , <&macro_release       &kp LSHFT>
+                        ;
                 )    
                 ZMK_MACRO(macro_Select_All,
                         wait-ms = <30>;
