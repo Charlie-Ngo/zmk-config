@@ -32,9 +32,14 @@
                 compatible = "zmk,combos";
                 // Toggles the different layers using combos
                 // Added combos for each side to get to all layers
+                combo_ctrlEnd{ 
+                        timeout-ms = <50>; 
+                        key-positions = <2 3 4>;
+                        bindings = <&kp LCTRL &kp LSHFT &kp End>; 
+                };
                 combo_blueT{
                         timeout-ms = <50>;
-                        key-positions = <14 15 16>;
+                        key-positions = <0 1 2>;
                         bindings = <&tog 6>;
                 };
                 combo_numL{
