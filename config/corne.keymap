@@ -100,7 +100,11 @@
                         label = "macro_CTRL_HOME";
                         wait-ms = <30>; 
                         tap-ms = <40>;
-                        bindings = <&kp LCTRL &kp LSHFT &kp End>;
+                        bindings = <&kp LCTRL>
+                                 , <&kp LSHFT>
+                                 , <&kp End>
+                                 ;
+                                 
                 };
         };
 
