@@ -112,7 +112,17 @@
                         timeout-ms = <50>;
                         key-positions = <30 31 39>;
                         bindings = <&tog 5>;
-                };                                 
+                };       
+                combo_vol_down{
+                        timeout-ms = <50>;
+                        key-positions = <1 13 25>;
+                        bindings = <&kp C_VOLUME_DOWN>;
+                };  
+                combo_vol_up{
+                        timeout-ms = <50>;
+                        key-positions = <2 14 26>;
+                        bindings = <&kp C_VOLUME_UP>;
+                };                    
         };
         macros{
                 ZMK_MACRO(macro_CTRL_HOME,
