@@ -32,6 +32,16 @@
                 compatible = "zmk,combos";
                 // Toggles the different layers using combos
                 // Added combos for each side to get to all layers
+                combo_l_bootloader{ 
+                        timeout-ms = <50>;
+                        key-positions = <0 1 12>
+                        bindings = <&bootloader>
+                };
+                combo_r_bootloader{ 
+                        timeout-ms = <50>;
+                        key-positions = <10 11 23>
+                        bindings = <&bootloader>
+                };
                 combo_ctrlHome{ 
                         timeout-ms = <50>; 
                         key-positions = <1 2 3 4>;
