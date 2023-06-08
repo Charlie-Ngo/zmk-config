@@ -300,8 +300,8 @@
      &kp DELETE        &kp EXCL         &kp AT         &kp HASH       &kp DOLLAR     &kp PERCENT      &kp CARET     &kp AMPERSAND   &kp ASTERISK      &kp LPAR        &kp RPAR      &kp EQUAL
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |       _       |     LBracket  |     RBracket  |       _       |       _       |    F Slash    |      _        |            
-        &trans        &trans          &kp LEFT       &kp DOWN         &kp RIGHT       &trans          &kp LBKT        &kp RBKT         &trans          &trans       &kp FSLH          &trans    
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |       _       |     LBracket  |     RBracket  |       _       |       _       |    B Slash    |      _        |            
+        &trans        &trans          &kp LEFT       &kp DOWN         &kp RIGHT       &trans          &kp LBKT        &kp RBKT         &trans          &trans         &kp BSLH        &trans    
 //|              |               |               |               |               |               |               |               |               |               |               |               |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |       _       |       UP       |               |       _       |       _       |       _       | 
