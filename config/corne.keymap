@@ -121,12 +121,12 @@
                 };       
                 combo_vol_down{
                         timeout-ms = <50>;
-                        key-positions = <12 24>;
+                        key-positions = <22 34>;
                         bindings = <&kp C_VOLUME_DOWN>;
                 };  
                 combo_vol_up{
                         timeout-ms = <50>;
-                        key-positions = <13 25>;
+                        key-positions = <23 35>;
                         bindings = <&kp C_VOLUME_UP>;
                 };       
                 combo_num_1{
