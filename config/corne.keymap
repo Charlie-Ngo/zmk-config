@@ -121,14 +121,64 @@
                 };       
                 combo_vol_down{
                         timeout-ms = <50>;
-                        key-positions = <1 13 25>;
+                        key-positions = <12 24>;
                         bindings = <&kp C_VOLUME_DOWN>;
                 };  
                 combo_vol_up{
                         timeout-ms = <50>;
-                        key-positions = <2 14 26>;
+                        key-positions = <13 25>;
                         bindings = <&kp C_VOLUME_UP>;
-                };                    
+                };       
+                combo_num_1{
+                        timeout-ms = <50>;
+                        key-positions = <1 13>;
+                        bindings = <&kp N1>;
+                };               
+                combo_num_2{
+                        timeout-ms = <50>;
+                        key-positions = <2 14>;
+                        bindings = <&kp N2>;
+                };
+                combo_num_ 3{
+                        timeout-ms = <50>;
+                        key-positions = <3 15>;
+                        bindings = <&kp N3>;
+                };
+                combo_num_ 4{
+                        timeout-ms = <50>;
+                        key-positions = <4 16>;
+                        bindings = <&kp N4>;
+                };
+                combo_num_ 5{
+                        timeout-ms = <50>;
+                        key-positions = <5 17>;
+                        bindings = <&kp N5>;
+                };
+                combo_num_ 6{
+                        timeout-ms = <50>;
+                        key-positions = <6 18>;
+                        bindings = <&kp N6>;
+                };
+                combo_num_ 7{
+                        timeout-ms = <50>;
+                        key-positions = <7 19>;
+                        bindings = <&kp N7>;
+                };
+                combo_num_ 8{
+                        timeout-ms = <50>;
+                        key-positions = <8 20>;
+                        bindings = <&kp N8>;
+                };
+                combo_num_ 9{
+                        timeout-ms = <50>;
+                        key-positions = <9 21>;
+                        bindings = <&kp N9>;
+                };
+                combo_num_ 0{
+                        timeout-ms = <50>;
+                        key-positions = <10 22>;
+                        bindings = <&kp N0>;
+                };
         };
         macros{
                 ZMK_MACRO(macro_CTRL_HOME,
