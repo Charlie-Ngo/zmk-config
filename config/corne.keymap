@@ -12,7 +12,7 @@
 #define NUM     1
 #define SYM     2
 #define FUNC    3
-#define NAVI    4
+#define GAME    4
 #define MULTI   5
 #define BLUET   6
 
@@ -376,26 +376,25 @@
 //                                         |               |               |               |               |               |               |               |
 //                                         -----------------------------------------------------------------------------------------------------------------
                         >;
-                };  
-// Arrows from hitbox                
-                navi_layer {    
+                };                
+                game_layer {    
                         bindings = < 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------               
-//|       _      |      _        |        _      |      HOME     |      PGUP     |        -      |        -      |        -      |        _      |       -       |       _       |      _       |              
-        &trans         &trans            &trans       &kp HOME       &kp PG_UP         &trans         &trans          &trans           &trans         &trans          &trans         &trans
+//|       ESC    |       Q       |        W      |       E       |        R      |        T      |        Y      |        U      |        I      |       O       |       P       |      -       |              
+        &kp ESC         &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P        &kp MINUS
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |      _        |       _       |      END      |     PGDOWN    |        -      |        _      |        _      |        _      |       _       |       _       |      _       |        
-        &trans         &trans          &trans         &kp END        &kp PG_DN         &trans         &trans          &trans          &trans         &trans          &trans         &trans
+//|       TAB    |       A       |       S       |       D       |        F      |        G      |        H      |        J      |        K      |       L       |       ;       |      '       |                
+        &kp TAB         &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L           &kp SEMI      &kp SQT
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |       _      |        _      |        _      |        _      |       _       |       _       |      _       |            
-        &trans        &trans           &kp LEFT       &kp DOWN         &kp RIGHT       &trans           &trans          &trans         &trans         &trans           &trans         &trans
+//|   Left CTRL  |       Z       |       X       |       C       |        V      |        B      |        N      |        M      |        ,      |       .       |       /       |       =      |            
+      &kp LCTRL        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M          &kp COMMA       &kp DOT         &kp FSLH       &kp EQUAL
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-//                                         |       _       |       _       |       UP       |               |       _       |       _       |       _       | 
-                                                &trans          &trans           &kp UP                          &trans           &trans          &trans
-//                                         |               |               |                |               |               |               |               |
+//                                         |    Left CTRL  |    Spacebar   |    Left ALT   |               |               |    Spacebar   |  Funct Layer  |
+                                                &kp LCTRL       &kp SPACE        &kp LALT                        &kp RET        &kp SPACE       &mo 5
+//                                         |               |               |               |               |               |               |               |
 //                                         -----------------------------------------------------------------------------------------------------------------
                         >;
                 };   
