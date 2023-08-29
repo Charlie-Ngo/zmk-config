@@ -12,7 +12,7 @@
 #define NUM     1
 #define SYM     2
 #define FUNC    3
-#define GAME    4
+#define GAMING  4
 #define MULTI   5
 #define BLUET   6
 
@@ -83,7 +83,7 @@
                         key-positions = <0 4>;
                         bindings = <&tog 3>;
                 };     
-                combo_naviL{
+                combo_gamingL{
                         timeout-ms = <50>;
                         key-positions = <0 5>;
                         bindings = <&tog 4>;
@@ -109,7 +109,7 @@
                         key-positions = <11 8>;
                         bindings = <&tog 3>;
                 };     
-                combo_naviR{
+                combo_gamingR{
                         timeout-ms = <50>;
                         key-positions = <11 9>;
                         bindings = <&tog 4>;
@@ -131,52 +131,52 @@
                 };       
                 combo_num_1{
                         timeout-ms = <50>;
-                        key-positions = <1 13>;
+                        key-positions = <1 25>;
                         bindings = <&kp N1>;
                 };               
                 combo_num_2{
                         timeout-ms = <50>;
-                        key-positions = <2 14>;
+                        key-positions = <2 26>;
                         bindings = <&kp N2>;
                 };
                 combo_num_3{
                         timeout-ms = <50>;
-                        key-positions = <3 15>;
+                        key-positions = <3 27>;
                         bindings = <&kp N3>;
                 };
                 combo_num_4{
                         timeout-ms = <50>;
-                        key-positions = <4 16>;
+                        key-positions = <4 28>;
                         bindings = <&kp N4>;
                 };
                 combo_num_5{
                         timeout-ms = <50>;
-                        key-positions = <5 17>;
+                        key-positions = <5 29>;
                         bindings = <&kp N5>;
                 };
                 combo_num_6{
                         timeout-ms = <50>;
-                        key-positions = <6 18>;
+                        key-positions = <6 30>;
                         bindings = <&kp N6>;
                 };
                 combo_num_7{
                         timeout-ms = <50>;
-                        key-positions = <7 19>;
+                        key-positions = <7 31>;
                         bindings = <&kp N7>;
                 };
                 combo_num_8{
                         timeout-ms = <50>;
-                        key-positions = <8 20>;
+                        key-positions = <8 32>;
                         bindings = <&kp N8>;
                 };
                 combo_num_9{
                         timeout-ms = <50>;
-                        key-positions = <9 21>;
+                        key-positions = <9 33>;
                         bindings = <&kp N9>;
                 };
                 combo_num_0{
                         timeout-ms = <50>;
-                        key-positions = <10 22>;
+                        key-positions = <10 34>;
                         bindings = <&kp N0>;
                 };
                 combo_f1{
@@ -319,12 +319,12 @@
         &trans        &kp N1           &kp N2         &kp N3           &kp N4          &kp N5          &kp N6          &kp N7          &kp N8         &kp N9          &kp N0         &trans
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |       _       |       _       |        _      |        _      |        *      |        4      |        5      |       6       |       +       |      _       |        
-        &trans          &trans         &trans          &trans           &trans       &trans       &kp KP_MULTIPLY      &kp N4          &kp N5         &kp N6        &kp KP_PLUS     &trans
+//|       _      |       _       |       _       |       _       |        _      |        _      |       _       |        4      |        5      |       6       |       +       |      *       |        
+        &trans          &trans         &trans          &trans           &trans       &trans           &trans           &kp N4          &kp N5         &kp N6        &kp KP_PLUS   &kp KP_MULTIPLY
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |        /      |        1      |        2      |       3       |       -       |      _       |            
-        &trans        &trans           &kp LEFT       &kp DOWN         &kp RIGHT       &trans      &kp KP_DIVIDE       &kp N1          &kp N2         &kp N3        &kp KP_MINUS     &trans
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |        _      |       _       |        1      |        2      |       3       |       -       |      /       |            
+        &trans        &trans           &kp LEFT       &kp DOWN         &kp RIGHT       &trans         &trans           &kp N1          &kp N2         &kp N3        &kp KP_MINUS   &kp KP_DIVIDE
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |       _       |       UP       |               |       .       |       0       |       =       | 
@@ -376,26 +376,26 @@
 //                                         |               |               |               |               |               |               |               |
 //                                         -----------------------------------------------------------------------------------------------------------------
                         >;
-                };                
-                game_layer {    
+                };           
+                gaming_layer {    
                         bindings = < 
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------               
-//|       ESC    |       Q       |        W      |       E       |        R      |        T      |        Y      |        U      |        I      |       O       |       P       |      -       |              
-        &kp ESC         &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P        &kp MINUS
-//|              |               |               |               |               |               |               |               |               |               |               |              |        
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       TAB    |       A       |       S       |       D       |        F      |        G      |        H      |        J      |        K      |       L       |       ;       |      '       |                
-        &kp TAB         &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L           &kp SEMI      &kp SQT
-//|              |               |               |               |               |               |               |               |               |               |               |              |        
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|   Left CTRL  |       Z       |       X       |       C       |        V      |        B      |        N      |        M      |        ,      |       .       |       /       |       =      |            
-      &kp LCTRL        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M          &kp COMMA       &kp DOT         &kp FSLH       &kp EQUAL
-//|              |               |               |               |               |               |               |               |               |               |               |              |        
-//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-//                                         |    Left CTRL  |    Spacebar   |    Left ALT   |               |               |    Spacebar   |  Funct Layer  |
-                                                &kp LCTRL       &kp SPACE        &kp LALT                        &kp RET        &kp SPACE       &mo 5
-//                                         |               |               |               |               |               |               |               |
-//                                         -----------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------              
+//|       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |              
+       &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans
+//|       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |         
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------              
+//|       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |              
+       &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans
+//|       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |         
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------              
+//|       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |              
+       &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans
+//|       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |       _      |         
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+//                                     |       _      |   Spacebar   |       _      |       _      |       _      |       _      |
+                                            &trans        &kp SPACE       &trans         &trans         &trans         &trans
+//                                     |       _      |       _      |       _      |       _      |       _      |       _      |
+//                                     -------------------------------------------------------------------------------------------
                         >;
                 };   
                 multi_layer {    
@@ -405,12 +405,12 @@
      &kp TILDE         &kp N1           &kp N2         &kp N3           &kp N4          &kp N5          &kp N6          &kp N7          &kp N8         &kp N9          &kp N0        &kp MINUS
 //|              |               |               |               |               |               |               |               |               |               |               |               |        
  //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------               
-//|    DELETE    |       !       |        @      |       #       |        $      |        %      |        ^      |        &      |        *      |  LParentheses | RParentheses  |      =       |              
-     &kp DELETE        &kp EXCL         &kp AT         &kp HASH       &kp DOLLAR     &kp PERCENT      &kp CARET     &kp AMPERSAND   &kp ASTERISK      &kp LPAR        &kp RPAR      &kp EQUAL
-//|              |               |               |               |               |               |               |               |               |               |               |              |        
+//|    DELETE    |     HOME      |       END     |      PGUP     |     PGDOWN    |        %      |        ^      |        &      |        *      |  LParentheses | RParentheses  |       _       |              
+     &kp DELETE      &kp HOME          &kp END        &kp PG_UP       &kp PG_DN     &kp PERCENT      &kp CARET     &kp AMPERSAND   &kp ASTERISK      &kp LPAR        &kp RPAR         &trans
+//|              |               |               |               |               |               |               |               |               |               |               |               |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |       _       |     LBracket  |     RBracket  |       _       |       _       |    B Slash    |      _        |            
-        &trans        &trans          &kp LEFT       &kp DOWN         &kp RIGHT       &trans          &kp LBKT        &kp RBKT         &trans          &trans         &kp BSLH        &trans    
+//|       _      |       _       |      LEFT     |      DOWN     |      RIGHT    |       _       |     LBracket  |     RBracket  |       _       |       _       |    B Slash    |       _       |            
+        &trans        &trans          &kp LEFT       &kp DOWN         &kp RIGHT       &trans          &kp LBKT        &kp RBKT         &trans          &trans         &kp BSLH         &trans    
 //|              |               |               |               |               |               |               |               |               |               |               |               |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
 //                                         |       _       |       _       |       UP       |               |       _       |       _       |       _       | 
