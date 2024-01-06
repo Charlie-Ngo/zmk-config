@@ -33,6 +33,26 @@
                 compatible = "zmk,combos";
                 // Toggles the different layers using combos
                 // Added combos for each side to get to all layers
+                combo_left{
+                         timeout-ms = <50>;
+                         key-positions = <14 26>;
+                         bindings = <&kp Left>;
+                };  
+                combo_down{
+                         timeout-ms = <50>;
+                         key-positions = <15 27>;
+                         bindings = <&kp Down>;
+                };       
+                combo_right{
+                         timeout-ms = <50>;
+                         key-positions = <29 38>;
+                         bindings = <&kp Up>;
+                };     
+                combo_up{
+                         timeout-ms = <50>;
+                         key-positions = <16 28>;
+                         bindings = <&kp Right>;
+                };         
                 combo_OS{
                          timeout-ms = <50>;
                          key-positions = <36 37 38>;
