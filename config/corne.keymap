@@ -36,22 +36,22 @@
                 combo_left{
                          timeout-ms = <50>;
                          key-positions = <14 26>;
-                         bindings = <&kp Left>;
+                         bindings = <&kp LEFT>;
                 };  
                 combo_down{
                          timeout-ms = <50>;
                          key-positions = <15 27>;
-                         bindings = <&kp Down>;
+                         bindings = <&kp DOWN>;
                 };    
                 combo_right{
                          timeout-ms = <50>;
                          key-positions = <16 28>;
-                         bindings = <&kp Right>;
+                         bindings = <&kp RIGHT>;
                 };    
                 combo_up{
                          timeout-ms = <50>;
                          key-positions = <29 38>;
-                         bindings = <&kp Up>;
+                         bindings = <&kp UP>;
                 };             
                 combo_OS{
                          timeout-ms = <50>;
