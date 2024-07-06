@@ -336,8 +336,8 @@
       &kp LSHFT        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M          &kp COMMA       &kp DOT         &kp FSLH       &kp EQUAL
 //|              |               |               |               |               |               |               |               |               |               |               |              |        
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
-//                                         |    Left CTRL  |    Backspace  |    Left ALT   |               |               |    Spacebar   |  Funct Layer  |
-                                                &kp LCTRL       &kp BSPC        &kp LALT                        &kp RET         &kp SPACE       &mo 5
+//                                         |    Left ALT   |    Backspace  |   Left CTRL   |               |               |    Spacebar   |  Funct Layer  |
+                                                &kp LALT       &kp BSPC        &kp LCTRL                        &kp RET         &kp SPACE       &mo 5
 //                                         |               |               |               |               |               |               |               |
 //                                         -----------------------------------------------------------------------------------------------------------------
                         >;
